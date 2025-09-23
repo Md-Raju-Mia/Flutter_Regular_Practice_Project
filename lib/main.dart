@@ -170,6 +170,52 @@ void main() {
 
 //Single Child Scroll View
 
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+          child: Scaffold(
+            appBar: AppBar(title: Text("Row",)),
+            body:  SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    width: 200,
+                    height: 200,
+                    color: Colors.blue,
+
+                  ),
+                  SizedBox(width: 10,),    //for row
+                  Container(
+                    width: 200,
+                    height: 200,
+                    color: Colors.red,
+
+                  ),
+                  SizedBox(width: 10,),    //for row
+                  Container(
+                    width: 200,
+                    height: 200,
+                    color: Colors.green,
+
+                  )
+                ],
+
+              ),
+            ),
+
+          )
+      ),
+    );
+
+  }
+}
+
 
 
 
