@@ -169,7 +169,140 @@ void main() {
 
 
 //Single Child Scroll View
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: SafeArea(
+//           child: Scaffold(
+//             appBar: AppBar(title: Text("Row",)),
+//             body:  SingleChildScrollView(
+//               scrollDirection: Axis.horizontal,
+//               child: Row(
+//                 children: [
+//                   Container(
+//                     width: 200,
+//                     height: 200,
+//                     color: Colors.blue,
+//
+//                   ),
+//                   SizedBox(width: 10,),    //for row
+//                   Container(
+//                     width: 200,
+//                     height: 200,
+//                     color: Colors.red,
+//
+//                   ),
+//                   SizedBox(width: 10,),    //for row
+//                   Container(
+//                     width: 200,
+//                     height: 200,
+//                     color: Colors.green,
+//
+//                   )
+//                 ],
+//
+//               ),
+//             ),
+//
+//           )
+//       ),
+//     );
+//
+//   }
+// }
 
+
+//List View
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: SafeArea(
+//         child: Scaffold(
+//           appBar: AppBar(title: Text("Row"),),
+//           body: ListView(
+//             children: [
+//               Container(
+//                 width: 200,
+//                 height: 200,
+//                 color: Colors.green,
+//               ),
+//               SizedBox(height: 10,),
+//               Container(
+//                 width: 200,
+//                 height: 200,
+//                 color: Colors.green,
+//               ),
+//               SizedBox(height: 10,),
+//               Container(
+//                 width: 200,
+//                 height: 200,
+//                 color: Colors.green,
+//               ),
+//               SizedBox(height: 10,),
+//               Container(
+//                 width: 200,
+//                 height: 200,
+//                 color: Colors.green,
+//               ),
+//
+//             ],
+//
+//           ),
+//         ),
+//
+//       ),
+//     );
+//   }
+// }
+
+
+//List View
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         body: ListView(
+//           children: [
+//             ListTile(
+//               title: Text("Themezone Academy"),
+//               subtitle: Text("Learning"),
+//               leading: CircleAvatar(child: Icon(Icons.message)),
+//               trailing: Icon(Icons.add_a_photo),
+//             ),
+//             ListTile(
+//               title: Text("Themezone Academy"),
+//               subtitle: Text("Learning"),
+//               leading: CircleAvatar(child: Icon(Icons.message)),
+//               trailing: Icon(Icons.add_a_photo),
+//             ),
+//             ListTile(
+//               title: Text("Themezone Academy"),
+//               subtitle: Text("Learning"),
+//               leading: CircleAvatar(child: Icon(Icons.message)),
+//               trailing: Icon(Icons.add_a_photo),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+
+//State & Position
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -177,42 +310,27 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SafeArea(
-          child: Scaffold(
-            appBar: AppBar(title: Text("Row",)),
-            body:  SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Container(
-                    width: 200,
-                    height: 200,
-                    color: Colors.blue,
-
-                  ),
-                  SizedBox(width: 10,),    //for row
-                  Container(
-                    width: 200,
-                    height: 200,
-                    color: Colors.red,
-
-                  ),
-                  SizedBox(width: 10,),    //for row
-                  Container(
-                    width: 200,
-                    height: 200,
-                    color: Colors.green,
-
-                  )
-                ],
-
+      home: Scaffold(
+        body: Center(
+          child: Stack(
+            // alignment: Alignment.center,
+            alignment: Alignment.bottomCenter,
+            children: [
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.black,
               ),
-            ),
-
-          )
+              Positioned(
+                child: CircleAvatar(
+                  radius: 50,
+                ),
+              )
+            ],
+          ),
+        ),
       ),
     );
-
   }
 }
 
