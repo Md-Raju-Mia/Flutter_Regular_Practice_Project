@@ -88,21 +88,94 @@ void main() {
 
 
 // Flutter Safe Area
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: SafeArea(
+//         child: Scaffold(
+//           body: Text("Hello flutter Developer"),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SafeArea(
-        child: Scaffold(
-          body: Text("Hello flutter Developer"),
-        ),
-      ),
-    );
-  }
-}
+
+//Container with SafeArea
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: SafeArea(
+//         child: Scaffold(
+//           body: Container(
+//             width: 500,
+//             height: 800,
+//             color:Colors.blue,
+//
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+//Row & Column
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: SafeArea(
+//           child: Scaffold(
+//             appBar: AppBar(title: Text("Column",)),
+//             // body:  Column(
+//             body:  Row(
+//               children: [
+//                 Container(
+//                   width: 200,
+//                   height: 200,
+//                   color: Colors.blue,
+//
+//                 ),
+//                 // SizedBox(height: 10,), //for column
+//                 SizedBox(width: 10,),    //for row
+//                 Container(
+//                   width: 200,
+//                   height: 200,
+//                   color: Colors.red,
+//
+//                 )
+//               ],
+//
+//             ),
+//
+//           )
+//       ),
+//     );
+//
+//   }
+// }
+
+
+//Single Child Scroll View
+
+
+
+
+
+
+
 
 
 
