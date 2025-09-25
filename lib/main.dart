@@ -355,26 +355,58 @@ void main() {
 
 
 //Card Design
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         body: Center(
+//           child: Card(
+//             elevation: 20,
+//             shape: RoundedRectangleBorder(
+//                 borderRadius: BorderRadius.all(Radius.circular(50))
+//             ),
+//
+//             child: Container(
+//               width: 300,
+//               height: 300,
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+
+//Grid View
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Card(
-            elevation: 20,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(50))
-            ),
+        body: GridView.count(
+          crossAxisCount: 2,
+          childAspectRatio: 1.0,
+          children: [
+            Container(color: Colors.red),
+            Container(color: Colors.blue),
+            Container(color: Colors.orange),
+            Container(color: Colors.green),
+            Container(color: Colors.red),
+            Container(color: Colors.blue),
+            Container(color: Colors.blue),
+            Container(color: Colors.orange),
+            Container(color: Colors.green),
+            Container(color: Colors.red),
+          ],
 
-            child: Container(
-              width: 300,
-              height: 300,
-            ),
-          ),
         ),
       ),
     );
