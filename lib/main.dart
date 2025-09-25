@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:helloraju/page1.dart';
+import 'package:helloraju/page2.dart';
+import 'package:helloraju/page3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -415,34 +418,75 @@ void main() {
 
 
 //Expanded Widget
-class MyApp extends StatelessWidget {
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         body: Column(
+//           children: [
+//             Expanded(
+//                 flex: 2,
+//                 child: Container(color: Colors.deepOrange)
+//             ),
+//             Expanded(
+//                 flex: 1,
+//                 child: Container(color: Colors.blue)
+//             ),
+//             Expanded(
+//                 flex: 1,
+//                 child: Container(color: Colors.green)
+//             ),
+//           ],
+//         )
+//       ),
+//     );
+//   }
+// }
+
+
+//PageView in Flutter
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  PageController _controller = PageController(
+    initialPage: 0,
+
+  );
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
+        body: PageView(
+          controller: _controller,
           children: [
-            Expanded(
-                flex: 2,
-                child: Container(color: Colors.deepOrange)
-            ),
-            Expanded(
-                flex: 1,
-                child: Container(color: Colors.blue)
-            ),
-            Expanded(
-                flex: 1,
-                child: Container(color: Colors.green)
-            ),
+            page1(),
+            page2(),
+            page3(),
+
           ],
-        )
+        ),
       ),
+
     );
   }
 }
+
+
+
+
+
+
+
 
 
 
