@@ -303,6 +303,39 @@ void main() {
 
 
 //State & Position
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         body: Center(
+//           child: Stack(
+//             // alignment: Alignment.center,
+//             alignment: Alignment.bottomCenter,
+//             children: [
+//               Container(
+//                 width: 200,
+//                 height: 200,
+//                 color: Colors.black,
+//               ),
+//               Positioned(
+//                 child: CircleAvatar(
+//                   radius: 50,
+//                 ),
+//               )
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+//Image from asses
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -312,27 +345,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: Stack(
-            // alignment: Alignment.center,
-            alignment: Alignment.bottomCenter,
-            children: [
-              Container(
-                width: 200,
-                height: 200,
-                color: Colors.black,
-              ),
-              Positioned(
-                child: CircleAvatar(
-                  radius: 50,
-                ),
-              )
-            ],
-          ),
+          child: Image.asset("images/spiderman.jpg"),
         ),
+
       ),
     );
   }
 }
+
 
 
 
