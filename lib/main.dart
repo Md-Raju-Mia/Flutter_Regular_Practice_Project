@@ -507,12 +507,26 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       home: Scaffold(
-
+           backgroundColor: Colors.white,
         // backgroundColor: Colors.pink[900],
-        backgroundColor: Color(0xFF880E4F),  //hex code er khetre #880E4F" just samne 0xFF add kore dilei color cole asbe"
+        // backgroundColor: Color(0xFF880E4F),  //hex code er khetre #880E4F" just samne 0xFF add kore dilei color cole asbe"
 
         body: Center(
-            child: Text("Hello flutter developer")
+            child: Text(
+                "Hello flutter developer. I am raju. It's my learninng time. And i love to learn.",
+
+                style: TextStyle(
+                  color: Colors.blue ,
+                  fontSize: 30.0 ,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic
+                ),
+
+                // textAlign: TextAlign.justify,
+                textAlign: TextAlign.right,
+
+
+            )
 
         ),
 
