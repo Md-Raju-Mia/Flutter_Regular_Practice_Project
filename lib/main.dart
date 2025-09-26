@@ -518,12 +518,15 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.blue ,
                   fontSize: 30.0 ,
-                  fontWeight: FontWeight.bold,
-                  fontStyle: FontStyle.italic
+                  // fontWeight: FontWeight.bold,
+                  // fontStyle: FontStyle.italic
+                  fontFamily: 'Spectral'
+
                 ),
 
                 // textAlign: TextAlign.justify,
-                textAlign: TextAlign.right,
+                // textAlign: TextAlign.right,
+                textAlign: TextAlign.center,
 
 
             )
