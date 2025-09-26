@@ -3,9 +3,9 @@ import 'package:helloraju/page1.dart';
 import 'package:helloraju/page2.dart';
 import 'package:helloraju/page3.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+// void main() {
+//   runApp(const MyApp());
+// }
 //Text Widget
 // class MyApp extends StatelessWidget {
 //   const MyApp({super.key});
@@ -449,38 +449,75 @@ void main() {
 
 
 //PageView in Flutter
-class MyApp extends StatefulWidget {
+// class MyApp extends StatefulWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   State<MyApp> createState() => _MyAppState();
+// }
+//
+// class _MyAppState extends State<MyApp> {
+//   PageController _controller = PageController(
+//     initialPage: 0,
+//
+//   );
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         body: PageView(
+//           controller: _controller,
+//           children: [
+//             page1(),
+//             page2(),
+//             page3(),
+//
+//           ],
+//         ),
+//       ),
+//
+//     );
+//   }
+// }
+
+
+//Fix flutter error
+/**Exception: Gradle task assembleDebug failed with exit code 1
+For solve this type of error go oracle website and download jdk
+download x64 Compressed Archive from this oracle site.
+ekhn download java file ti install korboC:\Program Files\Java\jdk-21\bin
+ekhn file tir path copy kore nibo "C:\Program Files\Java\jdk-21\bin"
+system environment e eta add kore nite hobe
+erpor command prompt e check kore dekhbo pacce kina "javac -version"*/
+
+
+
+
+//Material App class
+void main(){
+  return runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  PageController _controller = PageController(
-    initialPage: 0,
-
-  );
-  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+
       home: Scaffold(
-        body: PageView(
-          controller: _controller,
-          children: [
-            page1(),
-            page2(),
-            page3(),
 
-          ],
-        ),
+        backgroundColor: Colors.green,
+
+        body: Text("Hello flutter developer"),
+
+
+
       ),
-
     );
   }
 }
-
 
 
 
