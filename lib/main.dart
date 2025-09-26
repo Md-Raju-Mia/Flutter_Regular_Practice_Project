@@ -508,9 +508,13 @@ class MyApp extends StatelessWidget {
 
       home: Scaffold(
 
-        backgroundColor: Colors.green,
+        // backgroundColor: Colors.pink[900],
+        backgroundColor: Color(0xFF880E4F),  //hex code er khetre #880E4F" just samne 0xFF add kore dilei color cole asbe"
 
-        body: Text("Hello flutter developer"),
+        body: Center(
+            child: Text("Hello flutter developer")
+
+        ),
 
 
 
